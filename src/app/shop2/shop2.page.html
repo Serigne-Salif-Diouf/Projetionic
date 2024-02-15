@@ -1,0 +1,219 @@
+<ion-header [translucent]="true" home-header>
+  <ion-item lines="none" class="search-content">
+    <ion-icon name="search-outline" slot="start" class="search-content_icon-search"></ion-icon>
+    <ion-input placeholder="Rechercher"></ion-input>   
+  </ion-item>
+  <ion-icon name="notifications-outline" size="large" class="notification-icon" color="primary"></ion-icon>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <!-- grid populaires -->
+<ion-grid>
+<div class="title-popular">
+ <h4>HOMMES</h4>
+</div>
+
+<swiper-container class="popular-swiper"  [options]="configPopular">
+<swiper-slide >
+  <ion-card class="one-card">
+    <ion-card-header>
+      <img src="assets/images/shop1.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <div class="content">
+       <ion-label>
+        <h4>Chaussures </h4>
+        <p>50 000 FCFA</p>
+      </ion-label>
+        <ion-button>
+          <ion-icon name="cart"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</swiper-slide>
+   
+<swiper-slide >
+  <ion-card class="two-card">
+    <ion-card-header>
+      <img src="assets/images/montre2.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <div class="content">
+        <ion-label>
+          <h4> Montres en Or </h4>
+          <p>175 000 FCFA</p>
+        </ion-label>
+          <ion-button>
+            <ion-icon name="cart"></ion-icon>
+          </ion-button>          
+      </div>         
+    </ion-card-content>
+  </ion-card>
+</swiper-slide>
+
+<swiper-slide >
+  <ion-card class="three-card">
+    <ion-card-header>
+      <img src="assets/images/shop9.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <div class="content">
+       <ion-label>
+        <h4>Ceintures </h4>
+        <p>1 000 FCFA</p>
+      </ion-label>
+        <ion-button>
+          <ion-icon name="cart"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</swiper-slide>
+</swiper-container>
+</ion-grid>
+
+
+
+
+<ion-grid>
+<div class="title-popular">
+ <h4>FEMMES</h4>
+</div>
+
+<swiper-container class="popular-swiper"  [options]="configPopular">
+<swiper-slide >
+  <ion-card class="one">
+    <ion-card-header>
+      <img src="assets/images/shop3.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <div class="content">
+       <ion-label>
+        <h4>Cheveux Naturelles </h4>
+        <p>75 000 FCFA</p>
+      </ion-label>
+        <ion-button>
+          <ion-icon name="cart"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</swiper-slide>
+   
+<swiper-slide >
+  <ion-card class="two">
+    <ion-card-header>
+      <img src="assets/images/shop2.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <div class="content">
+        <ion-label>
+          <h4>Vestes </h4>
+          <p>7 000 FCFA</p>
+        </ion-label>
+          <ion-button>
+            <ion-icon name="cart"></ion-icon>
+          </ion-button>          
+      </div>         
+    </ion-card-content>
+  </ion-card>
+</swiper-slide>
+
+<swiper-slide >
+  <ion-card class="three">
+    <ion-card-header>
+      <img src="assets/images/shop4.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <div class="content">
+       <ion-label>
+        <h4>Prét à Porter </h4>
+        <p>10 000 FCFA</p>
+      </ion-label>
+        <ion-button>
+          <ion-icon name="cart"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</swiper-slide>
+</swiper-container>
+</ion-grid>
+
+
+
+
+<ion-grid>
+<div class="title-popular">
+ <h4>ENFANTS</h4>
+</div>
+
+<swiper-container class="popular-swiper"  [options]="configPopular">
+<swiper-slide >
+  <ion-card class="un">
+    <ion-card-header>
+      <img src="assets/images/shop5.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <div class="content">
+       <ion-label>
+        <h4>Makup pour les Filles </h4>
+        <p>25 000 FCFA</p>
+      </ion-label>
+        <ion-button>
+          <ion-icon name="cart"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</swiper-slide>
+   
+<swiper-slide >
+  <ion-card class="deux">
+    <ion-card-header>
+      <img src="assets/images/shop7.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <div class="content">
+        <ion-label>
+          <h4>Des Couches</h4>
+          <p>2 000 FCFA</p>
+        </ion-label>
+          <ion-button>
+            <ion-icon name="cart"></ion-icon>
+          </ion-button>          
+      </div>         
+    </ion-card-content>
+  </ion-card>
+</swiper-slide>
+
+<swiper-slide >
+  <ion-card class="trois">
+    <ion-card-header>
+      <img src="assets/images/shop8.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <div class="content">
+       <ion-label>
+        <h4>Jeux de Poupées </h4>
+        <p>1 500 FCFA</p>
+      </ion-label>
+        <ion-button>
+          <ion-icon name="cart"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</swiper-slide>
+</swiper-container>
+</ion-grid>
+
+
+
+
+
+
+
+</ion-content>

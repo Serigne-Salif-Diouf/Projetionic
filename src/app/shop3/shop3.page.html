@@ -1,0 +1,213 @@
+<ion-header [translucent]="true" home-header>
+  <ion-item lines="none" class="search-content">
+    <ion-icon name="search-outline" slot="start" class="search-content_icon-search"></ion-icon>
+    <ion-input placeholder="Rechercher"></ion-input>   
+  </ion-item>
+  <ion-icon name="notifications-outline" size="large" class="notification-icon" color="primary"></ion-icon>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+       <!-- grid populaires -->
+<ion-grid>
+  <div class="title-popular">
+      <h4>Accessoires Homme</h4>
+   </div>
+
+   <swiper-container class="popular-swiper"  [options]="configPopular">
+     <swiper-slide >
+       <ion-card class="one-card">
+         <ion-card-header>
+           <img src="assets/images/hom5.png" alt="">
+         </ion-card-header>
+         <ion-card-content>
+           <div class="content">
+            <ion-label>
+             <h4>Costumes </h4>
+             <p>95 000 FCFA</p>
+           </ion-label>
+             <ion-button>
+               <ion-icon name="cart"></ion-icon>
+             </ion-button>
+           </div>
+         </ion-card-content>
+       </ion-card>
+     </swiper-slide>
+        
+     <swiper-slide >
+       <ion-card class="two-card">
+         <ion-card-header>
+           <img src="assets/images/hom1.png" alt="">
+         </ion-card-header>
+         <ion-card-content>
+           <div class="content">
+             <ion-label>
+               <h4>lunette en cercle </h4>
+               <p>14 000 FCFA</p>
+             </ion-label>
+               <ion-button>
+                 <ion-icon name="cart"></ion-icon>
+               </ion-button>          
+           </div>         
+         </ion-card-content>
+       </ion-card>
+     </swiper-slide>
+
+     <swiper-slide >
+       <ion-card class="three-card">
+         <ion-card-header>
+           <img src="assets/images/hom3.png" alt="">
+         </ion-card-header>
+         <ion-card-content>
+           <div class="content">
+            <ion-label>
+             <h4>Montres en Or </h4>
+             <p>150 000 FCFA</p>
+           </ion-label>
+             <ion-button>
+               <ion-icon name="cart"></ion-icon>
+             </ion-button>
+           </div>
+         </ion-card-content>
+       </ion-card>
+     </swiper-slide>
+   </swiper-container>
+</ion-grid>
+
+
+
+
+<ion-grid>
+  <div class="title-popular">
+      <h4>Accessoires Femmes</h4>
+   </div>
+
+   <swiper-container class="popular-swiper"  [options]="configPopular">
+     <swiper-slide >
+       <ion-card class="one">
+         <ion-card-header>
+           <img src="assets/images/fem6.png" alt="">
+         </ion-card-header>
+         <ion-card-content>
+           <div class="content">
+            <ion-label>
+             <h4>Cheveux Naturelles </h4>
+             <p>75 000 FCFA</p>
+           </ion-label>
+             <ion-button>
+               <ion-icon name="cart"></ion-icon>
+             </ion-button>
+           </div>
+         </ion-card-content>
+       </ion-card>
+     </swiper-slide>
+        
+     <swiper-slide >
+       <ion-card class="two">
+         <ion-card-header>
+           <img src="assets/images/fem2.png" alt="">
+         </ion-card-header>
+         <ion-card-content>
+           <div class="content">
+             <ion-label>
+               <h4>Voille de mode </h4>
+               <p>9 000 FCFA</p>
+             </ion-label>
+               <ion-button>
+                 <ion-icon name="cart"></ion-icon>
+               </ion-button>          
+           </div>         
+         </ion-card-content>
+       </ion-card>
+     </swiper-slide>
+
+     <swiper-slide >
+       <ion-card class="three">
+         <ion-card-header>
+           <img src="assets/images/fem3.png" alt="">
+         </ion-card-header>
+         <ion-card-content>
+           <div class="content">
+            <ion-label>
+             <h4>lunette </h4>
+             <p>15 000 FCFA</p>
+           </ion-label>
+             <ion-button>
+               <ion-icon name="cart"></ion-icon>
+             </ion-button>
+           </div>
+         </ion-card-content>
+       </ion-card>
+     </swiper-slide>
+   </swiper-container>
+</ion-grid>
+
+
+ 
+
+<ion-grid>
+  <div class="title-popular">
+      <h4>Accessoires Enfants</h4>
+   </div>
+
+   <swiper-container class="popular-swiper"  [options]="configPopular">
+     <swiper-slide >
+       <ion-card class="un">
+         <ion-card-header>
+           <img src="assets/images/enf5.png" alt="">
+         </ion-card-header>
+         <ion-card-content>
+           <div class="content">
+            <ion-label>
+             <h4>Costumes </h4>
+             <p>50 000 FCFA</p>
+           </ion-label>
+             <ion-button>
+               <ion-icon name="cart"></ion-icon>
+             </ion-button>
+           </div>
+         </ion-card-content>
+       </ion-card>
+     </swiper-slide>
+        
+     <swiper-slide >
+       <ion-card class="deux">
+         <ion-card-header>
+           <img src="assets/images/enf2.png" alt="">
+         </ion-card-header>
+         <ion-card-content>
+           <div class="content">
+             <ion-label>
+               <h4>Prét à Porter pour les Fille </h4>
+               <p>16 000 FCFA</p>
+             </ion-label>
+               <ion-button>
+                 <ion-icon name="cart"></ion-icon>
+               </ion-button>          
+           </div>         
+         </ion-card-content>
+       </ion-card>
+     </swiper-slide>
+
+     <swiper-slide >
+       <ion-card class="trois">
+         <ion-card-header>
+           <img src="assets/images/enf4.png" alt="">
+         </ion-card-header>
+         <ion-card-content>
+           <div class="content">
+            <ion-label>
+             <h4>Costume Bleu </h4>
+             <p>75 000 FCFA</p>
+           </ion-label>
+             <ion-button>
+               <ion-icon name="cart"></ion-icon>
+             </ion-button>
+           </div>
+         </ion-card-content>
+       </ion-card>
+     </swiper-slide>
+   </swiper-container>
+</ion-grid>
+
+ </ion-content>

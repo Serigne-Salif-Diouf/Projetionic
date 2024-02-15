@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { HomePageRoutingModule } from './home-routing.module';
 
+import { IonicModule } from '@ionic/angular';
+
+import { Shop3PageRoutingModule } from './shop3-routing.module';
+
+import { Shop3Page } from './shop3.page';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -13,8 +15,8 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    Shop3PageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [Shop3Page]
 })
-export class HomePageModule {}
+export class Shop3PageModule {}

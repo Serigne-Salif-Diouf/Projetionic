@@ -1,20 +1,118 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true" home-header>
+  <ion-item lines="none" class="search-content">
+    <ion-icon name="search-outline" slot="start" class="search-content_icon-search"></ion-icon>
+    <ion-input placeholder="Rechercher"></ion-input>   
+  </ion-item>
+  <ion-icon name="notifications-outline" size="large" class="notification-icon" color="primary"></ion-icon>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+ <ion-grid class="new">
+<div class="top-container">
+  <h4>Nouveautés</h4>
+  <img src="assets/images/img.png" alt="Nouveautés" class="top-container_img">
+</div>
+ </ion-grid>
+ 
+    <ion-grid class="categories">
+      <swiper-container page="true" [options]="slideOpts">
+        <swiper-slide>
+        <ion-item fill="outline" lines="none" class="ion-no-padding">
+          <ion-icon name="man-outline" slot="start" class="man"></ion-icon>
+          <ion-label class="ion-no-margin">
+            <h4>Homme</h4>
+            <p>235 articles en ventes</p>
+          </ion-label>
+        </ion-item>
+        </swiper-slide>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+        <swiper-slide>
+          <ion-item fill="outline" lines="none" class="ion-no-padding">
+            <ion-icon name="woman-outline" slot="start" class="woman"></ion-icon>
+            <ion-label class="ion-no-margin">
+              <h4>Femme</h4>
+              <p>235 articles en ventes</p>
+            </ion-label>
+          </ion-item>
+        </swiper-slide>
+
+        <swiper-slide>
+          <ion-item fill="outline" lines="none" class="ion-no-padding">
+            <ion-icon name="walk-outline" slot="start" class="child"></ion-icon>
+            <ion-label class="ion-no-margin">
+              <h4>Enfant</h4>
+              <p>235 articles en ventes</p>
+            </ion-label>
+          </ion-item>
+        </swiper-slide>
+      </swiper-container>
+    </ion-grid>
+
+    <!-- grid populaires -->
+<ion-grid>
+   <div class="title-popular">
+       <h4>Les plus populaires</h4>
+      <a href="#">Tout voir</a>
+    </div>
+
+  
+    <swiper-container class="popular-swiper"  [options]="configPopular">
+      <swiper-slide >
+        <ion-card class="one-card">
+          <ion-card-header>
+            <img src="assets/images/img3.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+             <ion-label>
+              <h4>Accessoires pour les Femmes </h4>
+              <p>250 000 FCFA</p>
+            </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+         
+      <swiper-slide >
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/hom5.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Accessoires pour les Hommes </h4>
+                <p>350 000 FCFA</p>
+              </ion-label>
+                <ion-button>
+                  <ion-icon name="cart"></ion-icon>
+                </ion-button>          
+            </div>         
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+
+      <swiper-slide >
+        <ion-card class="three-card">
+          <ion-card-header>
+            <img src="assets/images/img2.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+             <ion-label>
+              <h4>Accessoires pour les Enfants </h4>
+              <p>150 000 FCFA</p>
+            </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+    </swiper-container>
+</ion-grid>
 </ion-content>
